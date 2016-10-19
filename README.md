@@ -1,1 +1,1 @@
-# FRedes
+# Fundamentos de redes (Prácticas)
