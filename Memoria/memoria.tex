@@ -21,6 +21,14 @@
 \usepackage[all]{xy} % Diagramas
 \usepackage{listings} % Escribir código 
 \usepackage{xparse} % Entornos
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+
 
 
 % Comandos
@@ -53,11 +61,16 @@
 \maketitle
 \tableofcontents % Generando el indice
 \newpage
-\setlength\parindent{0pt} % Quitamos la sangría
 
 
-\section{Introducción}
-\input{./Memoria/Temas/introduccion.tex}
+
+\input{./Temas/introduccion.tex}
+\input{./Temas/software.tex}
+\input{./Temas/aplicaciones.tex}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
