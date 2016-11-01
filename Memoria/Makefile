@@ -2,6 +2,8 @@ all: memoria.pdf
 
 memoria.pdf: ./*.tex 
 	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./memoria.tex
+	bibtex memoria
+	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./memoria.tex
 	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./memoria.tex
 	make clean
 
@@ -17,6 +19,8 @@ clean:
 	rm -f ./*.snm
 	rm -f ./*.toc
 	rm -f ./*.gz
+	rm -f ./*.blg
+	rm -f ./*.bbl
 
 mrproper: clean
 	rm -f ./*.pdf

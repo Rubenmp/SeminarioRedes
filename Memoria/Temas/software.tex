@@ -5,7 +5,13 @@ Usa el paradigma del productor consumidor, tiene una aplicación que envía y ot
 	\item La aplicación receptora utiliza una aplicación web ejecutada en un entorno de Chrome del dispositivo. Se pueden hacer aplicaciones receptoras que aparte de soportar HTML5 tengan más variedad de protocolos de streaming: MPEG-DASH, HTTP Live Streaming, y Microsoft Smooth Streaming Protocol.
 \end{itemize}
 
-Chromecast usa el protocolo mDNS (multicast Domain Name System) para buscar dispositivos disponibles en una red Wi-Fi, anteriormente usaba el protocolo DIAL (DIscovery And Launch).
+Chromecast para buscar dispositivos disponibles en una red Wi-Fi usa el protocolo mDNS (multicast Domain Name System), anteriormente usaba el protocolo DIAL (DIscovery And Launch).
+
+Para la visualización de contenidos en la TV se mezclan conceptos DLNA (Digital Living Network Alliance) y Miracast\cite{DLNA-Mircast}.
+A la hora de enviar contenido realmente se manda la orden a Chromecast de que reproduzca el contenido elegido directamente desde la nube.
+Es la principal diferencia con DLNA, ya que no se reproduce contenido desde un servidor DLNA sino desde Internet.
+Para usar solamente DLNA para streaming necesitaríamos aplicaciones de terceros, por ejemplo iMediaShare.
+Otra funcionalidad es poder enviar los contenidos de una pestaña del navegador Chrome a la TV en lo que podríamos denominar una conexión Miracast pura y dura, punto a punto.
 
 
 
@@ -21,8 +27,20 @@ Chromecast usa el protocolo mDNS (multicast Domain Name System) para buscar disp
 	\end{minipage} 
 \end{figure}
 
+
+
+
+
+
+
 \subsection{Google Cast}
+\subsubsection{Google Home}
+
 \subsection{mDNS (multicast Domain Name System)}
-\subsection{Miracast?}
+
+
+\subsection{Miracast}
+\input{./Temas/miracast.tex}
+
 
 \subsection{Chrome OS?}

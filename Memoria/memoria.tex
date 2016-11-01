@@ -21,6 +21,12 @@
 \usepackage[all]{xy} % Diagramas
 \usepackage{listings} % Escribir código 
 \usepackage{xparse} % Entornos
+
+
+
+\usepackage[nottoc]{tocbibind} % Incluir bibliografía en el índice
+
+
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
@@ -47,7 +53,7 @@
 \linespread{1.1}                  % Espacio entre líneas.
 \setlength\parindent{0pt}         % Indentación para párrafo.
 
-\title{Prácticas Fundamentos de Redes: \\ Chromecast}
+\title{Prácticas Fundamentos de Redes \\ Chromecast}
 \author{Francisco Javier Morales Piqueras \\
 		María Florencio \\
 		Rubén Morales Pérez}
@@ -71,10 +77,22 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 %					 Bibliografía
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+% Para hacer citas: \cite{<referencia>}
+% donde <referencia> es lo primero que aparece en el fichero .bib:
+% @tipo{<referencia>, ...} 
+
+% Si no se utiliza una cita hay que especificarlo con \nocite{<referencia>}
+
+
+ % El orden de referencias es determinado por el orden de aparición de \cite y \nocite
+\bibliographystyle{unsrt}  
+
+\bibliography{./Bibliografia/preambulo,./Bibliografia/referencias}  
+
 
 \end{document}
