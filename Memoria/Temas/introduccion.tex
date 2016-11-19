@@ -1,7 +1,13 @@
 \section{Introducción}
-Google Chromecast es un dispositivo de reproducción multimedia fabricado por Google y comercializado a partir de Julio de 2013. Reproduce audio/video conectado con una televisión o monitor por HDMI haciendo streaming mediante Wi-Fi. Un nuevo modelo Chromecast Ultra que soporta 4k fue anunciado durante el evento $\#$MadeByGoogle.
+Google Chromecast es un dispositivo de reproducción multimedia fabricado por Google y comercializado a partir de Julio de 2013. Reproduce contenido multimedia conectado a una televisión o monitor vía HDMI haciendo streaming mediante Wi-Fi. Un nuevo modelo Chromecast Ultra que soporta 4k fue anunciado durante el evento \#MadeByGoogle.
 
-Para enviar la información utiliza Google Cast, seleccionamos el contenido que queremos reproducir por una aplicación (Android 4.1+, iOS 7.0+) o mediante el navegador chrome y se carga por su puerto mico-USB.
+\
+
+Para hacer streaming utiliza el software Google Cast, que implementa distintos protocolos y tiene varios modos de funcionamiento que desarrollaremos a continuación.
+
+\
+
+Google Cast dispone de librerías para las últimas versiones de Android y iOS, así como para Chrome OS y aplicaciones de Google Chrome.
 
 \begin{figure*}[h]
 	\centering
@@ -16,14 +22,21 @@ Para enviar la información utiliza Google Cast, seleccionamos el contenido que 
 	\end{minipage}
 \end{figure*}
 
-Para iniciar la reproducción pulsamos el botón de \textit{cast}, si el puerto HDMI dispone de Consumer Electronics Control (CEC) la televisión se encenderá inmediatamente.
-Dicho contenido puede residir también en su almacenamiento local. 
-Con la función invitado pueden usarse redes Wi-Fi diferentes.
+Chromecast permite reproducir contenido almacenado en un dispositivo conectado a la red local o en un sevidor externo. El control de la reproducción se realiza en ambos casos desde uno o varios dispositivos locales compatibles con la tecnología Google Cast.
 
-Las imágenes o vídeos enviados mediante dispositivos Android suelen perder calidad al estar escaladas las imágenes en pantallas pequeñas.
-Cuando no hay contenido en streaming reproduce un contenido personalizable de fondo, puede incluir fotos personales, de satélite, noticias, etc.
+\
 
-Su principal competidor es el protocolo propietario AirPlay desarrollado por Apple Inc. que permite streaming inalámbrico entre dispositivos para audio, video, fotos, etc. 
+Para iniciar la reproducción pulsamos el botón de \textit{cast}. En ese momento aparecen los dispositivos Chromecast conectados a la red local y se elige aquel donde se quiere emitir el contenido. Si el puerto HDMI dispone de Consumer Electronics Control (CEC) la televisión se encenderá inmediatamente.
+
+\
+
+Cuando no hay contenido en streaming reproduce un contenido personalizable de fondo, puede incluir fotos personales,
+de satélite, noticias, etc. Por defecto muestra imágenes aleatorias seleccionadas por Google.
+
+\
+
+Su principal competidor es el servicio AirPlay desarrollado por Apple, que permite streaming inalámbrico entre dispositivos iPhone, iPad o Mac para audio, vídeo, fotos, etc.
+
 \vspace{1cm}
 \begin{figure}[h]
 	\centering
@@ -35,6 +48,7 @@ Su principal competidor es el protocolo propietario AirPlay desarrollado por App
 
 
 \subsection{Generaciones}
+
 El chromecast de primera generación incluye un decodificador de VP8 y H.264 para formatos de compresión de vídeo, 512 MB de Micron DDR3L RAM y 2 GB de memoria flash.
 El de segunda generación tiene un cable flexible y magnético, usa procesador dual ARM Cortex-A7 de frecuencia 1.2 GHz y tiene tres antenas adaptativas para mejroar la conexión con el router.
 El dispositivo tiene 512 MB de Samsung DDR3L RAM y 256 MB de memoria flash.
