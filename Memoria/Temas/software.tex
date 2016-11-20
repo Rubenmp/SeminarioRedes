@@ -1,6 +1,38 @@
 \section{Software}
-Usa el paradigma del productor consumidor, tiene una aplicación que envía y otra que recibe.
-\begin{itemize}	
+
+EL Google Chromecast no es más que un dispositivo compatible con el protocolo propietario de Google Cast que actúa como receptor. Este protocolo fue lanzado en exclusividad para el Chromecast de primera generación en julio de 2013, pero en febrero de 2014 pusieron el SDK a disposición de los desarrolladores para usarlo en sus propias aplicaciones. En mayo de 2015 había más de 20.000 aplicaciones de terceros compatibles con esta tecnología según reconoce Google.
+
+\
+
+Para iniciar la reproducción de un contenido pulsamos el botón de \textit{cast}, que aparecerá automáticamente si Google Cast está integrado con la aplicación. En ese momento aparecen los dispositivos Chromecast conectados a la red local y se elige aquel donde se quiere emitir el contenido. Si el puerto HDMI dispone de Consumer Electronics Control (CEC) la televisión se encenderá inmediatamente.
+
+\
+
+Google Cast tiene dos modos de funcionamiento:
+
+\begin{itemize}
+	\item Uno es usar dispositivo desde el que solicitamos el streaming para controlar la reproducción (en adelante dispositivo emisor): pausar un vídeo, subir el volumen del audio, crear o modificar una cola de reproducción, etc.
+	El dispositivo receptor (por ejemplo un Chromecast) es quien se encarga de descargarlo y comunicarse con el servidor de contenido, liberando al dispositivo emisor de esta tarea.
+	Esto garantiza una carga de trabajo muy baja para el emisor y le permite estar bloqueado mientras la reproducción está teniendo lugar.
+	El receptor ejecuta una versión adaptada del navegador Chrome para realizar el streaming.
+	El contenido puede estar almacenado localmente en el dispositivo emisor o en un servidor externo.
+	El primer caso ocurre en aplicaciones como Google Photos, mientras que un ejemplo del segundo serían Netflix o Youtube.
+	Las aplicaciones emisoras que usen este modo de funcionamiento deben ser compatible con Android 4.1, iOS 7.0 o versiones superiores si son aplicaciones móviles y con Windows 7, macOS 10.7, Chrome OS 28 o versiones superiores si son aplicaciones Chrome.
+	En este último caso, se debe tener instalada la extensión Cast.
+
+	\item El otro modo es hacer mirroring de una pestaña de Chrome o del escritorio de un ordenador con Chrome o del de un dispositivo con Android 4.4 o superior.
+	La calidad del streaming en este caso varía ampliamente según la potencia de procesamiento del emisor.
+	En el caso de hacerse desde un smartphone, la calidad de las imágenes normalmente se deteriora debido al escalado.
+\end{itemize}
+
+Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red Wi-Fi para reproducir contenido, pero en las versiones posteriores a esa fecha ya no es necesario.
+Esto se debe a que se ha añadido un modo invitado.
+En este modo, el receptor emite ultrasonidos a través de los altavoces y el emisor es capaz de localizarlo usando el micrófono.
+Se usa un PIN de cuatro dígitos que aparece en pantalla para la verificación.
+El modo invitado está disponible para todos los Chromecast con un dispositivo Android como emisor y para los Chromecast a partir de la segunda generación para aquellos con dispositivos iOS como emisor.
+
+Según su propia documentacón, Google Cast implementa el paradigma del productor consumidor, tiene una aplicación que envía y otra que recibe.
+\begin{itemize}
 	\item La aplicación de envío ofrece controles para elegir el dispositivo de llegada.
 	\item La aplicación receptora utiliza una aplicación web ejecutada en un entorno de Chrome del dispositivo. Se pueden hacer aplicaciones receptoras que aparte de soportar HTML5 tengan más variedad de protocolos de streaming: MPEG-DASH, HTTP Live Streaming, y Microsoft Smooth Streaming Protocol.
 \end{itemize}
@@ -16,15 +48,15 @@ Otra funcionalidad es poder enviar los contenidos de una pestaña del navegador 
 
 
 
-\begin{figure}[ht] 
+\begin{figure}[ht]
 	\begin{minipage}[b]{0.55\linewidth}
-	Utiliza un sistema operativo de escritorio llamado Chrome OS, siendo el navegador Google Chrome su principal herramienta de uso.  
+	Utiliza un sistema operativo de escritorio llamado Chrome OS, siendo el navegador Google Chrome su principal herramienta de uso.
 	Chrome OS se basa en el proyecto de código abierto Chromium OS,5 que, a diferencia de Chrome OS, se puede compilar a partir del código fuente descargado.
 	\end{minipage}%%
 	\begin{minipage}[b]{0.45\linewidth}
 		\centering
-		\includegraphics[width=.65\linewidth]{./Imagenes/googlecastbrowser.jpg} 
-	\end{minipage} 
+		\includegraphics[width=.65\linewidth]{./Imagenes/googlecastbrowser.jpg}
+	\end{minipage}
 \end{figure}
 
 
