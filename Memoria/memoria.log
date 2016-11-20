@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.10)  21 NOV 2016 00:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.10)  21 NOV 2016 00:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**memoria.tex
+**./memoria.tex
 (./memoria.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -1329,10 +1329,8 @@ Package tocbibind Note: Using section or other style headings.
 
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 36.
- (/Users/fjmpiq/FRedes/.latex/memoria.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
-)
+
+No file memoria.aux.
 \openout1 = `memoria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1349,7 +1347,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1435,9 +1432,6 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 65.
 LaTeX Info: Redefining \pageref on input line 65.
 LaTeX Info: Redefining \nameref on input line 65.
-
-(/Users/fjmpiq/FRedes/.latex/memoria.out)
-(/Users/fjmpiq/FRedes/.latex/memoria.out)
 \@outlinefile=\write4
 \openout4 = `memoria.out'.
 
@@ -1458,11 +1452,6 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 Package xypdf Info: Line width: 0.43799pt on input line 65.
 \c@lstlisting=\count230
-
-(/Users/fjmpiq/FRedes/.latex/memoria.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
@@ -1514,14 +1503,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<./Imagenes/chromecast1gen.jpg, id=70, 1485.0pt x 990.0pt>
+<./Imagenes/chromecast1gen.jpg, id=14, 1485.0pt x 990.0pt>
 File: ./Imagenes/chromecast1gen.jpg Graphic file (type jpg)
 
 <use ./Imagenes/chromecast1gen.jpg>
 Package pdftex.def Info: ./Imagenes/chromecast1gen.jpg used on input line 11.
 (pdftex.def)             Requested size: 163.35051pt x 108.90033pt.
 
-<./Imagenes/Chromecast.jpg, id=71, 1247.66125pt x 830.10126pt>
+<./Imagenes/Chromecast.jpg, id=15, 1247.66125pt x 830.10126pt>
 File: ./Imagenes/Chromecast.jpg Graphic file (type jpg)
 
 <use ./Imagenes/Chromecast.jpg>
@@ -1532,7 +1521,7 @@ Overfull \hbox (19.43765pt too wide) in paragraph at lines 16--17
 [][] 
  []
 
-<./Imagenes/fondo.png, id=72, 1284.8pt x 803.0pt>
+<./Imagenes/fondo.png, id=16, 1284.8pt x 803.0pt>
 File: ./Imagenes/fondo.png Graphic file (type png)
  <use ./Imagenes/fondo.png>
 Package pdftex.def Info: ./Imagenes/fondo.png used on input line 35.
@@ -1658,7 +1647,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 72.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 72.
-[4] <./Imagenes/googlecastbrowser.jpg, id=89, 642.4pt x 401.5pt>
+[4] <./Imagenes/googlecastbrowser.jpg, id=37, 642.4pt x 401.5pt>
 File: ./Imagenes/googlecastbrowser.jpg Graphic file (type jpg)
 
 <use ./Imagenes/googlecastbrowser.jpg>
@@ -1714,7 +1703,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 99.
  (./Temas/miracast.tex
-<./Imagenes/miracast.jpg, id=90, 301.125pt x 301.125pt>
+<./Imagenes/miracast.jpg, id=38, 301.125pt x 301.125pt>
 File: ./Imagenes/miracast.jpg Graphic file (type jpg)
 
 <use ./Imagenes/miracast.jpg>
@@ -1791,24 +1780,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-) (/Users/fjmpiq/FRedes/.latex/memoria.bbl
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1.
-
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
 )
+No file memoria.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 98.
@@ -1834,30 +1807,39 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 98.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 98.
- [6]
+[6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (/Users/fjmpiq/FRedes/.latex/memoria.aux
+ (./memoria.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
-Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 6C611D63A41B741E8C468933DCA61F08;652.
 
+
+Package rerunfilecheck Warning: File `memoria.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `memoria.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  87E4FEC672ED44D4A880AC7316BB5703;604.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 26632 strings out of 493089
- 443563 string characters out of 6134842
- 565025 words of memory out of 5000000
- 29679 multiletter control sequences out of 15000+600000
+ 26608 strings out of 493089
+ 442858 string characters out of 6134842
+ 564760 words of memory out of 5000000
+ 29667 multiletter control sequences out of 15000+600000
  18033 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,10358b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,10360b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
@@ -1869,11 +1851,10 @@ al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
 exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on /Users/fjmpiq/FRedes/.latex/memoria.pdf (6 pages, 1793620 byt
-es).
+Output written on memoria.pdf (6 pages, 1788969 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

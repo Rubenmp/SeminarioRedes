@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex /Users/fjmpiq/FRedes/.latex/memoria"] 1479677385 "/Users/fjmpiq/FRedes/.latex/memoria.aux" "/Users/fjmpiq/FRedes/.latex/memoria.bbl" "/Users/fjmpiq/FRedes/.latex/memoria" 1479677512
+["bibtex /Users/fjmpiq/FRedes/.latex/memoria"] 1479684999 "/Users/fjmpiq/FRedes/.latex/memoria.aux" "/Users/fjmpiq/FRedes/.latex/memoria.bbl" "/Users/fjmpiq/FRedes/.latex/memoria" 1479685001
   "./Bibliografia/preambulo.bib" 1478114536 1189 e8390988c18ddaaf57c24849becf58e2 ""
-  "./Bibliografia/referencias.bib" 1479674599 726 6475944f2016fe56ccb5d683624c6228 ""
-  "/Users/fjmpiq/FRedes/.latex/memoria.aux" 1479677438 2484 f72607748e6f76d1dc7a632a3b93c488 ""
+  "./Bibliografia/referencias.bib" 1479682780 972 0d5e6f0d14f1548ab4cc7c58887c1c3f ""
+  "/Users/fjmpiq/FRedes/.latex/memoria.aux" 1479685001 2509 55079b08e3b61acb9e1abc7ac575ac61 ""
   "/Users/fjmpiq/FRedes/.latex/memoria.bcf" 0 -1 0 ""
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   (generated)
   "/Users/fjmpiq/FRedes/.latex/memoria.bbl"
   "/Users/fjmpiq/FRedes/.latex/memoria.blg"
-["pdflatex"] 1479677436 "memoria.tex" "/Users/fjmpiq/FRedes/.latex/memoria.pdf" "memoria" 1479677512
+["pdflatex"] 1479684999 "memoria.tex" "/Users/fjmpiq/FRedes/.latex/memoria.pdf" "memoria" 1479685001
   "./Imagenes/Chromecast.jpg" 1478001861 86301 42148ef20613ba95727976e3c9a0c1bc ""
   "./Imagenes/chromecast1gen.jpg" 1478001861 98587 412ebc72b664f4105bf985061dcad624 ""
   "./Imagenes/fondo.png" 1478001861 837186 72d15031c96737f99c289e7fcce70de8 ""
@@ -17,11 +17,11 @@
   "./Temas/aplicaciones.tex" 1478001861 509 e832253becf22794d3e5c8396c3b35c5 ""
   "./Temas/introduccion.tex" 1479674640 2396 8b687d2c00cb62cbb17be4694284e4e0 ""
   "./Temas/miracast.tex" 1478114536 2548 7d643455d8890f934787e6093ce41e01 ""
-  "./Temas/software.tex" 1479677433 5348 fdb93e0a981ab05173f415aec989bfdc ""
-  "/Users/fjmpiq/FRedes/.latex/memoria.aux" 1479677438 2484 f72607748e6f76d1dc7a632a3b93c488 ""
-  "/Users/fjmpiq/FRedes/.latex/memoria.bbl" 1479677389 49 0eba253fc001332e731e8aba3f23127b "bibtex /Users/fjmpiq/FRedes/.latex/memoria"
-  "/Users/fjmpiq/FRedes/.latex/memoria.out" 1479677438 652 6c611d63a41b741e8c468933dca61f08 ""
-  "/Users/fjmpiq/FRedes/.latex/memoria.toc" 1479677438 858 163e26d5a0e2177cb7d8bdb21428982b ""
+  "./Temas/software.tex" 1479684072 6166 6514d2baa2aea023dc120170a4493ab4 ""
+  "/Users/fjmpiq/FRedes/.latex/memoria.aux" 1479685001 2509 55079b08e3b61acb9e1abc7ac575ac61 ""
+  "/Users/fjmpiq/FRedes/.latex/memoria.bbl" 1479684999 49 0eba253fc001332e731e8aba3f23127b "bibtex /Users/fjmpiq/FRedes/.latex/memoria"
+  "/Users/fjmpiq/FRedes/.latex/memoria.out" 1479685001 652 6c611d63a41b741e8c468933dca61f08 ""
+  "/Users/fjmpiq/FRedes/.latex/memoria.toc" 1479685001 858 4c08d03eb273113458a3875df170901c ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -218,11 +218,11 @@
   "Temas/aplicaciones.tex" 1478001861 509 e832253becf22794d3e5c8396c3b35c5 ""
   "Temas/introduccion.tex" 1479674640 2396 8b687d2c00cb62cbb17be4694284e4e0 ""
   "Temas/miracast.tex" 1478114536 2548 7d643455d8890f934787e6093ce41e01 ""
-  "Temas/software.tex" 1479677433 5348 fdb93e0a981ab05173f415aec989bfdc ""
+  "Temas/software.tex" 1479684072 6166 6514d2baa2aea023dc120170a4493ab4 ""
   "memoria.tex" 1479564288 2827 8271d2232d88abe635a177f512daaba0 ""
   (generated)
   "/Users/fjmpiq/FRedes/.latex/memoria.toc"
-  "/Users/fjmpiq/FRedes/.latex/memoria.log"
+  "/Users/fjmpiq/FRedes/.latex/memoria.out"
   "/Users/fjmpiq/FRedes/.latex/memoria.pdf"
   "/Users/fjmpiq/FRedes/.latex/memoria.aux"
-  "/Users/fjmpiq/FRedes/.latex/memoria.out"
+  "/Users/fjmpiq/FRedes/.latex/memoria.log"
