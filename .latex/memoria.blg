@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoria.aux
 The style file: unsrt.bst
 I couldn't open database file ./Bibliografia/preambulo.bib
----line 44 of file memoria.aux
+---line 51 of file memoria.aux
  : \bibdata{./Bibliografia/preambulo
  :                                  ,./Bibliografia/referencias}
 I'm skipping whatever remains of this command
