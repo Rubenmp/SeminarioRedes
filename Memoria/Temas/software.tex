@@ -62,16 +62,15 @@ Los formatos multimedia a los que Google Cast da soporte son los siguientes:
 
 \end{itemize}
 
-Chromecast para buscar dispositivos disponibles en una red Wi-Fi usa el protocolo mDNS (multicast Domain Name System), anteriormente usaba el protocolo DIAL (DIscovery And Launch).
+En el CES de 2015, Google anunció una expansión de Google Cast centrada en la reproducción de audio.
+La idea era que los fabricantes de altavoces integraran la tecnología Google Cast sin necesidad de depender de un Chromecast.
+Está disponible en varios modelos de LG y Sony.
 
-Para la visualización de contenidos en la TV se mezclan conceptos DLNA (Digital Living Network Alliance) y Miracast\cite{DLNA-Miracast}.
-A la hora de enviar contenido realmente se manda la orden a Chromecast de que reproduzca el contenido elegido directamente desde la nube.
-Es la principal diferencia con DLNA, ya que no se reproduce contenido desde un servidor DLNA sino desde Internet.
-Para usar solamente DLNA para streaming necesitaríamos aplicaciones de terceros, por ejemplo iMediaShare.
-Otra funcionalidad es poder enviar los contenidos de una pestaña del navegador Chrome a la TV en lo que podríamos denominar una conexión Miracast pura y dura, punto a punto.
+\
 
-
-
+En mayo de 2015, Google lanzó nuevas APIs dirigidas a poder el televisor como segunda pantalla que muestre un contenido distinto del de la aplicación emisora.
+Esto, junto con las Game Manager APIs, permite, por ejemplo, usar varios dispostivos como mandos en una partida de un videojuego y una pantalla común que proyecte la partida.
+Uno de esos dispositivos sería el que controlara el estado de la partida y se sincronizarían entre ellos intercambiando mensajes con un Chromecast u otro dispositivo receptor.
 
 \begin{figure}[ht]
 	\begin{minipage}[b]{0.55\linewidth}
@@ -84,20 +83,23 @@ Otra funcionalidad es poder enviar los contenidos de una pestaña del navegador 
 	\end{minipage}
 \end{figure}
 
+\subsection{Protocolos de detección de dispositivos}
 
+La primeras versiones del Chromecast usaban el protocolo DIAL para la detección de dispositivos receptores desde la aplicación emisora.
+En las últimas versiones, se utiliza el protocolo mDNS para cuando los dispositivos se encuentran en la misma red local y un protocolo especial basado en ultrasonidos para el modo invitado.
 
+\subsubsection{DIAL}
+\input{./Temas/DIAL.tex}
 
+\subsubsection{mDNS (multicast Domain Name System)}
+\input{./Temas/mDNS.tex}
 
+\subsubsection{Modo invitado}
+\input{./Temas/modo_invitado.tex}
 
+\subsection{Comparativa con otros protocolos multimedia}
 
-\subsection{Google Cast}
-\subsubsection{Google Home}
-
-\subsection{mDNS (multicast Domain Name System)}
-
-
-\subsection{Miracast}
+\subsubsection{Miracast}
 \input{./Temas/miracast.tex}
-
 
 \subsection{Chrome OS?}
