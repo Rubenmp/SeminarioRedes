@@ -61,7 +61,9 @@ Como hemos adelantado, la API de Google Cast implementa el paradigma del product
 	Esta aplicación crea un canal seguro con la aplicación receptura para el intercambio de mensajes.
 
 	\item La aplicación receptora es una web app ejecutándose en una versión adaptada del navegador Chrome con una interfaz gráfica en CSS.
-	La aplicación receptora puede tener una complejidad muy variable, pudiendo ir desde limitarse a reproducir contenido HTML5 hasta soportar protocolos de streaming como MPEG-DASH, HTTP Live Streaming o el Microsoft Smooth Streaming Protocol\cite{DLNA-Miracast}.
+	Esta puede tener una complejidad muy variable, pudiendo ir desde limitarse a reproducir contenido HTML5 hasta soportar protocolos de streaming como MPEG-DASH, HTTP Live Streaming o el Microsoft Smooth Streaming Protoco\cite{CastSDK}.
+	Al ser una web app, el código de la misma debe estar alojado en un servidor, ya que el Chromecast no almacena aplicaciones.
+	Una consecuencia de esto último es que, aunque el contenido esté alojado en un dispositivo de la red local, normalmente seguirá siendo imprescindible conexión a internet para cargar la web app. Esto sería posible si la web app también estuviese almacenada en un servidor local, pero es algo que solo tiene sentido para aplicaciones que desarrolle el propio usuario.
 
 \end{itemize}
 
@@ -108,10 +110,11 @@ Uno de esos dispositivos sería el que controlara el estado de la partida y se s
 \end{figure}
 
 
-\subsection{Protocolos de detección de dispositivos}
+\subsection{Protocolos que usa Google Cast}
 
-La primeras versiones del Chromecast usaban el protocolo DIAL para la detección de dispositivos receptores desde la aplicación emisora.
-En las últimas versiones, se utiliza el protocolo mDNS para cuando los dispositivos se encuentran en la misma red local y un protocolo especial basado en ultrasonidos para el modo invitado.
+El funcionamiento de Google Cast se descompone en dos pasos: primero, la detección de dispositivos receptores desde la aplicación emisora y, segundo, el intercambio de mensajes entre receptor y emisor.
+La primeras versiones del Chromecast usaban el protocolo DIAL para ambos pasos.
+En las últimas versiones, para el primer paso se utiliza el protocolo mDNS cuando los dispositivos se encuentran en la misma red local y un protocolo especial basado en ultrasonidos para el modo invitado. Para el segundo paso, Google no ha hecho público qué protocolo se usa. Solo ha trascendido \href{https://plus.google.com/116723992087294619013/posts/d6TLN4S8mrH}{que no usa WebSockets y que se establece un canal binario seguro entre ambos extremos}.
 
 \subsubsection{DIAL}
 \input{./Temas/DIAL.tex}
