@@ -10,16 +10,16 @@
 \usepackage{cancel} % Cancelar expresiones
 \usepackage{multirow, multicol, tabularx, booktabs, longtable} % Tablas
 \usepackage{fancyhdr, fncychap} % Encabezados
-\usepackage{algpseudocode, algorithmicx, algorithm} % Pseudo-código	
+\usepackage{algpseudocode, algorithmicx, algorithm} % Pseudo-código
 \usepackage{bbding} % Símbolos
 \usepackage{enumitem} % Enumerados a), b), c)... usando \begin{enumerate}[label=\alph*)]
-\usepackage{graphicx, xcolor, color, pstricks} % Gráficos --TikZ-- 
+\usepackage{graphicx, xcolor, color, pstricks} % Gráficos --TikZ--
 % http://www.texample.net/tikz/examples/
 \usepackage[hidelinks]{hyperref}  % Enlaces
 \usepackage{verbatim} % Comentarios largos \begin{comment}
 \usepackage{rotating} % \begin{rotate}{30}
 \usepackage[all]{xy} % Diagramas
-\usepackage{listings} % Escribir código 
+\usepackage{listings} % Escribir código
 \usepackage{xparse} % Entornos
 
 
@@ -31,7 +31,7 @@
 \hypersetup{
 	colorlinks=true,
 	linkcolor=black,
-	filecolor=magenta,      
+	filecolor=magenta,
 	urlcolor=cyan,
 }
 
@@ -71,6 +71,7 @@
 
 
 \input{./Temas/introduccion.tex}
+\input{./Temas/hardware.tex}
 \input{./Temas/software.tex}
 \input{./Temas/aplicaciones.tex}
 
@@ -84,15 +85,15 @@
 
 % Para hacer citas: \cite{<referencia>}
 % donde <referencia> es lo primero que aparece en el fichero .bib:
-% @tipo{<referencia>, ...} 
+% @tipo{<referencia>, ...}
 
 % Si no se utiliza una cita hay que especificarlo con \nocite{<referencia>}
 
 
  % El orden de referencias es determinado por el orden de aparición de \cite y \nocite
-\bibliographystyle{unsrt}  
+\bibliographystyle{unsrt}
 
-\bibliography{./Bibliografia/preambulo,./Bibliografia/referencias}  
+\bibliography{./Bibliografia/preambulo,./Bibliografia/referencias}
 
 
 \end{document}

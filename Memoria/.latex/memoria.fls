@@ -316,7 +316,8 @@ INPUT ./Imagenes/Chromecast.jpg
 INPUT ./Imagenes/fondo.png
 INPUT ./Imagenes/fondo.png
 INPUT ./Imagenes/fondo.png
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT ./Temas/hardware.tex
+INPUT ./Temas/hardware.tex
 INPUT ./Temas/software.tex
 INPUT ./Temas/software.tex
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
@@ -335,6 +336,7 @@ INPUT ./Imagenes/seconddisplay.png
 INPUT ./Imagenes/gameexample.jpg
 INPUT ./Imagenes/gameexample.jpg
 INPUT ./Imagenes/gameexample.jpg
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ./Temas/DIAL.tex
 INPUT ./Temas/DIAL.tex
 INPUT ./Temas/mDNS.tex
