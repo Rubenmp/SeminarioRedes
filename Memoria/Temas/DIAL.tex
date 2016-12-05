@@ -1,6 +1,6 @@
-DIAL, (DIscovery And Launch) es el antiguo protocolo de comunicación que usaba Chromecast, fue desarrollado con Netflix y Youtube.
-Se basa en Universal Plug and Play (UPnP), Simple Service Discovery Protocol (SSDP), y protocolos HTTP.
-El Protocolo Simple de Descubrimiento de Servicios (Simple Service Discovery Protocol) es un protocolo que sirve para la búsqueda de dispositivos UPnP en una red. Utiliza UDP en unicast o multicast en el puerto 1900 para anunciar los servicios de un dispositivo. Si el receptor ofrece el servicio deseado devuelve el mensaje '200 OK' con HTTP.
+DIAL (DIscovery And Launch) es el antiguo protocolo de comunicación que usaba Chromecast, desarrollado con Netflix y Youtube.
+Se basa en Universal Plug and Play (UPnP), Simple Service Discovery Protocol (SSDP) y protocolos HTTP.
+SSDP es un protocolo que sirve para la búsqueda de dispositivos UPnP en una red. Utiliza UDP en unicast o multicast en el puerto 1900 para anunciar los servicios de un dispositivo. Si el receptor ofrece el servicio deseado devuelve el mensaje '200 OK' con HTTP.
 
 
 \begin{figure}[H]
@@ -30,5 +30,3 @@ El servidor puede procesar mensajes de hasta 4KB.
 
 
 Las respuestas específicas y otros detalles como manejo de excepciones se pueden encontrar en \cite{dial}
-
-
