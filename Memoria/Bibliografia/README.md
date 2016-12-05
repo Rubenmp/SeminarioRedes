@@ -22,4 +22,6 @@ Donde @tipo puede ser los que aparecen en la "Reference guide" de:
 
 ## Referencias
 Se puede hacer una referencia a la bibliografía dentro del código de la memoria.
-En el caso del ejemplo anterior tendríamos que hacer \cite { referencia }
+En el caso del ejemplo anterior tendríamos que hacer 
+	
+	\cite { referencia }
