@@ -16,15 +16,15 @@ Google Cast tiene dos modos de funcionamiento:
 
 \begin{itemize}
 
-	\item Uno es usar dispositivo desde el que solicitamos el streaming para controlar la reproducción (en adelante dispositivo emisor): pausar un vídeo, subir el volumen del audio, crear o modificar una cola de reproducción, etc.
+	\item Uno es usar dispositivo desde el que solicitamos el streaming (en adelante dispositivo emisor) para controlar la reproducción: pausar un vídeo, subir el volumen del audio, crear o modificar una cola de reproducción, etc.
 	El dispositivo receptor (por ejemplo un Chromecast) es quien se encarga de descargarlo y comunicarse con el servidor de contenido, liberando al dispositivo emisor de esta tarea.
 	Esto garantiza una carga de trabajo muy baja para el emisor y le permite estar bloqueado mientras la reproducción está teniendo lugar.
-	El contenido puede estar almacenado localmente en el dispositivo emisor o en un servidor externo.
-	El primer caso ocurre en aplicaciones como Google Photos, mientras que un ejemplo del segundo serían Netflix o YouTube.
-	Las aplicaciones emisoras que usen este modo de funcionamiento deben ser compatible con Android 4.1, iOS 7.0 o versiones superiores si son aplicaciones móviles y con Windows 7, macOS 10.7, Chrome OS 28 o versiones superiores si son aplicaciones Chrome.
+	Ejemplos de aplicaciones que usan este modo de funcionamiento serían Netflix o YouTube.
+	Las aplicaciones emisoras de este tipo deben ser compatible con Android 4.1, iOS 7.0 o versiones superiores si son aplicaciones móviles y con Windows 7, macOS 10.7, Chrome OS 28 o versiones superiores si son aplicaciones Chrome.
 	En este último caso, se debe tener instalada la extensión Cast.
 
-	\item El otro modo es hacer mirroring de una pestaña de Chrome o del escritorio de un ordenador con Chrome o del de un dispositivo con Android 4.4 o superior.
+	\item El otro modo está pensado para enviar contenido del dispositivo emisor, como cuando hacemos mirroring o usamos la televisión como segunda pantalla de una aplicación (por ejemplo en juegos que hacen uso de la Game Manager API).
+	El mirroring está soportado de manera nativa en el Chromecast (es decir, no hace falta descargar una aplicación) para pestañas de Chrome, el escritorio de un ordenador con Chrome instalado o dispositivos con Android 4.4 o superior.
 	La calidad del streaming en este caso varía ampliamente según la potencia de procesamiento del emisor.
 	En el caso de hacerse desde un smartphone, la calidad de las imágenes normalmente se deteriora debido al escalado.
 
@@ -48,7 +48,7 @@ Google Cast tiene dos modos de funcionamiento:
 Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red Wi-Fi para reproducir contenido, pero en las versiones posteriores a esa fecha ya no es necesario.
 Esto se debe a que se ha añadido un modo invitado.
 En este modo, el receptor emite ultrasonidos a través de los altavoces y el emisor es capaz de localizarlo usando el micrófono.
-Se usa un PIN de cuatro dígitos que aparece en pantalla para la verificación.
+También puede usarse un PIN de cuatro dígitos que aparece en pantalla.
 El modo invitado está disponible para todos los Chromecast con un dispositivo Android como emisor y para los Chromecast a partir de la segunda generación para aquellos con dispositivos iOS como emisor.
 
 \
@@ -122,12 +122,10 @@ En las últimas versiones, para el primer paso se utiliza el protocolo mDNS cuan
 \subsubsection{mDNS (multicast Domain Name System)}
 \input{./Temas/mDNS.tex}
 
-\subsubsection{Modo invitado}
+\subsubsection{Modo invitado vía ultrasonidos}
 \input{./Temas/modo_invitado.tex}
 
 \subsection{Comparativa con otros protocolos multimedia}
 
 \subsubsection{Miracast}
 \input{./Temas/miracast.tex}
-
-\subsection{Chrome OS?}
