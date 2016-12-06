@@ -2,9 +2,5 @@ Si se usa un dispositivo cercano a un Chromecast, este puede detectarlo y sincro
 El Chromecast emite sonidos a muy alta frecuencia (inaudibles para un humano) a través del altavoz de la televisión.
 Estos sonidos son la codificación de un mensaje determinado.
 A continuación, el emisor escucha este sondo a través del micrófono y lo transforma a un mensaje interpretable por la aplicación.
-Este procedimiento está limitado por especificaciones del dispositivos: a menudo, el micrófono no es capaz de detectar sonidos a frecuencias tan altas, bien por limitaciones de hardware o de firmware.
+Este procedimiento está limitado por especificaciones del dispositivo: a menudo, el micrófono no es capaz de detectar sonidos a frecuencias tan altas, bien por limitaciones de hardware o de firmware.
 Para entender mejor el funcionamiento del intercambio de información a través de ultrasonidos, se explica con más detalle en \href{http://smus.com/ultrasonic-networking/}{el blog del ingeniero de Google Boris Smus}.
-
-\
-
-Básicamente, hay que establecer un alfabeto de símbolos que se pueden usar en el mensaje, asociando a cada símbolo una frecuencia. Para traducción entre símbolos y sonidos se usa \href{https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling}{DTMF}.
