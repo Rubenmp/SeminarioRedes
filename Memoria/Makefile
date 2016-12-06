@@ -7,6 +7,11 @@ memoria.pdf: ./*.tex ./Temas/*.tex ./Bibliografia/*.bib
 	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./memoria.tex
 	make clean
 
+presentacion.pdf: ./*.tex ./TemasBeamer/*.tex
+	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./presentacion.tex
+	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./presentacion.tex
+	make clean
+
 clean:
 	echo "Limpieza"
 	find . -regex ".*~" -exec rm -r {} \;
