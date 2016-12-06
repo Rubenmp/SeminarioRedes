@@ -1,4 +1,4 @@
-all: memoria.pdf
+all: memoria.pdf presentacion.pdf
 
 memoria.pdf: ./*.tex ./Temas/*.tex ./Bibliografia/*.bib
 	pdflatex -shell-escape -interaction=nonstopmode -file-line-error ./memoria.tex
