@@ -61,19 +61,21 @@ Como hemos adelantado, la API de Google Cast implementa el paradigma del product
 	\item La aplicación emisora 
 	\item La aplicación receptora 
 \end{itemize}
-	La aplicación emisora se encarga de proveer al usuario la capacidad de controlar la reproducción y elegir el dispositivo donde se emite el contenido.
-	Esta aplicación crea un canal seguro con la aplicación receptora para el intercambio de mensajes.
+La aplicación emisora se encarga de proveer al usuario la capacidad de controlar la reproducción y elegir el dispositivo donde se emite el contenido.
+Esta aplicación crea un canal seguro con la aplicación receptora para el intercambio de mensajes.
 
-	\
+\
 
-	La aplicación receptora es una web app ejecutándose en una versión adaptada del navegador Chrome con una interfaz gráfica en CSS.
-	Esta puede tener una complejidad muy variable, pudiendo ir desde limitarse a reproducir contenido HTML5 hasta soportar protocolos de streaming como MPEG-DASH, HTTP Live Streaming o el Microsoft Smooth Streaming Protoco\cite{CastSDK}.
-	
-	Al ser una web app, el código de la misma debe estar alojado en un servidor, ya que el Chromecast no almacena aplicaciones.
-	Una consecuencia de esto último es que, aunque el contenido final esté alojado en un dispositivo de la red local, seguirá siendo necesaria una conexión a internet para cargar la web app. 
-	
-	¿¿¿ Esto sería posible si la web app también estuviese almacenada en un servidor local, pero es algo que solo tiene sentido para aplicaciones que desarrolle el propio usuario. ???
+La aplicación receptora es una web app ejecutándose en una versión adaptada del navegador Chrome con una interfaz gráfica en CSS.
+Esta puede tener una complejidad muy variable, pudiendo ir desde limitarse a reproducir contenido HTML5 hasta soportar protocolos de streaming como MPEG-DASH, HTTP Live Streaming o el Microsoft Smooth Streaming Protocol \cite{CastSDK}.
 
+Al ser una web app, el código de la misma debe estar alojado en un servidor, ya que el Chromecast no almacena aplicaciones.
+Una consecuencia de esto último es que, aunque el contenido final esté alojado en un dispositivo de la red local, seguirá siendo necesaria una conexión a internet para cargar la web app. 
+
+Sería posible omitir la conexión a internet si el servidor local (por ejemplo, un móvil u ordenador) alojase la aplicación web, de esta forma solo se necesitaría una red local.
+En cualquier caso esto solo tiene sentido para aplicaciones que desarrolle el propio usuario.
+
+\
 
 Los formatos multimedia a los que Google Cast da soporte son los siguientes:
 
@@ -93,24 +95,25 @@ Está disponible en varios modelos de LG y Sony.
 
 \
 
-En mayo de 2015, Google lanzó nuevas APIs dirigidas a poder el televisor como segunda pantalla que muestre un contenido distinto del de la aplicación emisora.
+En mayo de 2015, Google lanzó nuevas APIs dirigidas a utilizar el televisor como segunda pantalla que muestre un contenido distinto del de la aplicación emisora.
 Esto, junto con las Game Manager APIs, permite, por ejemplo, usar varios dispostivos como mandos en una partida de un videojuego y una pantalla común que proyecte la partida.
 Uno de esos dispositivos sería el que controlara el estado de la partida y se sincronizarían entre ellos intercambiando mensajes con un Chromecast u otro dispositivo receptor.
 
-\begin{figure*}[h]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{.35\textwidth}
 		\includegraphics[scale=0.3]{./Imagenes/games.png}
 		\caption{Ilustración de Google para explicar el potencial de su Game Manager API}\label{fig:games}
 	\end{minipage}\qquad
-	\hspace{1cm}
+	\hspace{2cm}
 	\begin{minipage}[b]{.35\textwidth}
 		\includegraphics[scale=0.3]{./Imagenes/seconddisplay.png}
 		\caption{Ilustración de Google como ejemplo de uso de una pantalla externa a través de Google Cast}\label{fig:seconddisplay}
 	\end{minipage}
-\end{figure*}
+\end{figure}
 
-\begin{figure}[h]
+% Creo que queda mejor sin esta imagen
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Imagenes/gameexample.jpg}
 	\label{fig:fondo}
@@ -121,7 +124,7 @@ Uno de esos dispositivos sería el que controlara el estado de la partida y se s
 \subsection{Protocolos que usa Google Cast}
 
 El funcionamiento de Google Cast se descompone en dos pasos: primero, la detección de dispositivos receptores desde la aplicación emisora y, segundo, el intercambio de mensajes entre receptor y emisor.
-La primeras versiones del Chromecast usaban el protocolo DIAL para ambos pasos.
+La primeras versiones del Chromecast usaban el protocolo DIAL que englobaba ambos pasos.
 En las últimas versiones, para el primer paso se utiliza el protocolo mDNS cuando los dispositivos se encuentran en la misma red local y un protocolo especial basado en ultrasonidos para el modo invitado. Para el segundo paso, Google no ha hecho público qué protocolo se usa. Solo ha trascendido \href{https://plus.google.com/116723992087294619013/posts/d6TLN4S8mrH}{que no usa WebSockets y que se establece un canal binario seguro entre ambos extremos}.
 
 \subsubsection{DIAL}
