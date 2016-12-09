@@ -15,6 +15,7 @@ Si el receptor es una televisión cuyo HDMI dispone de Consumer Electronics Cont
 \
 
 \subsection{Modos de funcionamiento de Google Cast}
+
 \subsubsection{Primer modo}
 Usar el dispositivo desde el que solicitamos el streaming (emisor) para controlar la reproducción: pausar un vídeo, subir el volumen, crear o modificar una cola de reproducción, etc.
 El dispositivo receptor (por ejemplo un Chromecast) se encarga de descargarlo y comunicarse con el servidor de contenido, liberando al dispositivo emisor de esta tarea.
@@ -29,7 +30,7 @@ El mirroring está soportado de manera nativa en el Chromecast (es decir, no hac
 La calidad del streaming en este caso varía ampliamente según la potencia de procesamiento del emisor.
 En el caso de hacerse desde un smartphone, la calidad de las imágenes normalmente se deteriora debido al escalado.
 
-\subsubsection{Esquemas}
+
 
 \begin{figure*}[h]
 	\centering
@@ -47,13 +48,7 @@ En el caso de hacerse desde un smartphone, la calidad de las imágenes normalmen
 \end{figure*}
 
 
-Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red Wi-Fi, en las versiones posteriores no es necesario al haber añadido un modo invitado.
-En este modo, el receptor emite ultrasonidos a través de los altavoces y el emisor es capaz de localizarlo usando el micrófono.
-También puede usarse un PIN de cuatro dígitos que aparece en pantalla.
-El modo invitado está disponible para todos los Chromecast con un dispositivo Android como emisor y para los Chromecast a partir de la segunda generación con dispositivos iOS como emisor.
-
-
-\subsection{Implementación}
+\subsection{Arquitectura}
 
 Como hemos adelantado, la API de Google Cast implementa el paradigma del productor-consumidor. Para implementar el protocolo hacen falta dos aplicaciones:
 
@@ -126,6 +121,13 @@ Uno de esos dispositivos sería el que controlara el estado de la partida y se s
 El funcionamiento de Google Cast se descompone en dos pasos: primero, la detección de dispositivos receptores desde la aplicación emisora y, segundo, el intercambio de mensajes entre receptor y emisor.
 La primeras versiones del Chromecast usaban el protocolo DIAL que englobaba ambos pasos.
 En las últimas versiones, para el primer paso se utiliza el protocolo mDNS cuando los dispositivos se encuentran en la misma red local y un protocolo especial basado en ultrasonidos para el modo invitado. Para el segundo paso, Google no ha hecho público qué protocolo se usa. Solo ha trascendido \href{https://plus.google.com/116723992087294619013/posts/d6TLN4S8mrH}{que no usa WebSockets y que se establece un canal binario seguro entre ambos extremos}.
+
+\
+
+Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red Wi-Fi, en las versiones posteriores no es necesario al haber añadido un modo invitado.
+En este modo, el receptor emite ultrasonidos a través de los altavoces y el emisor es capaz de localizarlo usando el micrófono.
+También puede usarse un PIN de cuatro dígitos que aparece en pantalla.
+El modo invitado está disponible para todos los Chromecast con un dispositivo Android como emisor y para los Chromecast a partir de la segunda generación con dispositivos iOS como emisor.
 
 \subsubsection{DIAL}
 \input{./Temas/Software/DIAL.tex}

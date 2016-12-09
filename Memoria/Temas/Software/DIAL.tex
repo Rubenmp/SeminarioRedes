@@ -5,7 +5,7 @@ SSDP es un protocolo que sirve para la búsqueda de dispositivos UPnP en una red
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.32]{./Imagenes/dial.png}
+	\includegraphics[scale=0.35]{./Imagenes/dial.png}
 	\caption{Funcionamiento general DIAL}
 	\label{fig:DIAL}
 \end{figure}
@@ -15,6 +15,8 @@ DIAL permite a dispositivos en segundo plano, como tablets o móviles, enviar co
 Los dispositivos en segundo plano almacenarán el cliente, los de primer plano ejecutarán el servidor.
 Para evitar conflictos con los nombres de aplicaciones permitidas DIAL tiene un registro con las aplicaciones que soporta. En el caso de que la aplicación deseada no esté en esa lista puede que tenga un prefijo que esté registrado, para así ofrecer mayor flexibilidad.
 
+\
+
 El protocolo DIAL tiene dos componentes, DIAL Service Discovery y DIAL REST Service.
 El primero busca el dispositivo en primer plano dentro de una red local y permite establecer conexión.
 El segundo permite al cliente mandar contenido, hacer consultas como subir o bajar volumen, etc. al servidor.
@@ -22,7 +24,7 @@ El servidor puede procesar mensajes de hasta 4KB.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{./Imagenes/dialrest.png}
+	\includegraphics[scale=0.45]{./Imagenes/dialrest.png}
 	\caption{Funcionamiento DIAL REST service}
 	\label{fig:DIAL}
 \end{figure}

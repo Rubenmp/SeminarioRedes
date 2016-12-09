@@ -1,3 +1,17 @@
+Multicast Domain Name System (mDNS, \href{https://tools.ietf.org/html/rfc6763}{RFC 6763}) es el protocolo usado para encontrar los dispositivos a los que conectarnos.
+
+mDNS transforma nombres de dominio en direcciones IP dentro de su registro de direcciones IPv4 o IPv6 usando el puerto 5353. Está pensado para redes locales sin tener que incluir un servidor DNS.
+Tiene las mismas interfaces de programación, formatos y restricciones semánticas que DNS, pero permite designar una porción del espacio de nombres de DNS a nuestro gusto, sin tener que pagar anualmente.
+
+Usa UDP en multicast y sus ventajas son:
+\begin{itemize}
+	\item Necesita poca configuración para activarse
+	\item Funciona cuando no hay infraestructura
+	\item Soporta fallos en la infraestructura
+\end{itemize}
+
+En el primer caso envía a todos los dispositivos una solicitud para identificarse.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Imagenes/mdns1.png}
@@ -5,11 +19,13 @@
 	\caption{Primer paso del protocolo mDNS}
 \end{figure}
 
+Como respuesta se devuelve la dirección IP con una variable TTL (Time To Live) para saber cuánto tiempo durará vigente la IP enviada.
+
+Si un dispositivo quiere rechazar la petición manda una IP con TTL cero.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Imagenes/mdns2.png}
 	\label{fig:mdns2}
 	\caption{Segundo paso del protocolo mDNS}
 \end{figure}
-
-mDNS es el protocolo usado para encontrar los dispositivos a los que conectarnos.
