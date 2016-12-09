@@ -1,0 +1,33 @@
+\subsection{Comparación otros protocolos}
+
+\subsubsection{Mirascat}
+
+\begin{frame}{Miracast}
+	\begin{block}{ }
+		Miracast es un protocolo multimedia para hacer streaming a un monitor desde un dispositivo local.
+
+		Con Miracast el dispositivo receptor es dependiente de que el dispositivo Android emisor se mantenga activo: si se bloquea también bloqueará la reproducción en el receptor.
+	\end{block}
+	
+	\begin{block}{Capas}
+		\begin{itemize}
+			\item Capa de internet: IPv4
+			\item Capa de transporte: TCP/UDP
+			\item Capa de aplicación, RTSP y RTP
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Red}
+		La conexión está creada vía Wi-Fi Protected Setup
+		(WPS), mecanismos para facilitar la configuración de
+		una red WLAN con seguridad WPA2.
+		
+		Existe una alternativa de código abierto a Miracast llamada \href{https://github.com/albfan/miraclecast}{MiracleCast}.
+	\end{block}
+	
+	\begin{alertblock}{Sin soporte de Google}
+		A partir de Android 6.0, Google ha dejado de dar soporte nativo a Miracast en favor de su propio Google Cast.
+	\end{alertblock}
+\end{frame}
