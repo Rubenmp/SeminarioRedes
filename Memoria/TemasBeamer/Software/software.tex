@@ -37,8 +37,7 @@
 	\end{block}
 	
 	\begin{figure}[h]
-			\includegraphics[scale=0.3]{./Imagenes/seconddisplay.png}
-			\caption{Pantalla externa}\label{fig:seconddisplay}
+		\includegraphics[scale=0.3]{./Imagenes/seconddisplay.png}
 	\end{figure}		
 \end{frame}
 
@@ -61,17 +60,15 @@
 
 \subsection{Arquitectura}
 \begin{frame}{Arquitectura}
-	Google Cast implementa el paradigma del productor-consumidor.
-	\begin{block}{ }
-		La aplicación emisora se encarga de controlar la reproducción y elegir el dispositivo donde se emite el contenido. 
+	\begin{block}{Google Cast}
+		Google Cast implementa el paradigma del productor-consumidor.
 	\end{block}
 	
-	\begin{block}{ }
+	\begin{block}{Aplicaciones}
+		La aplicación emisora se encarga de controlar la reproducción y elegir el dispositivo donde se emite el contenido. 
+		
 		La aplicación receptora es una aplicación web ejecutándose en una adaptación de Chrome.
 		
 		El código de la misma debe estar alojado en un servidor, ya que el Chromecast no almacena aplicaciones. Por tanto, aunque el contenido esté alojado en un dispositivo de la red local, seguirá necesitando conexión a internet para cargar la web app. 
 	\end{block}
 \end{frame}
-
-
-
