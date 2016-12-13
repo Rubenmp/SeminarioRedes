@@ -18,23 +18,35 @@
 \begin{frame}{DIAL}
 	\begin{block}{ }
 		DIAL (DIscovery And Launch) es el antiguo protocolo de comunicación. 
-		Se basa en Universal Plug and Play (UPnP), Simple Service Discovery Protocol (SSDP) y protocolos HTTP. 
+		Se basa en Universal Plug and Play (UPnP), Simple Service Discovery Protocol (SSDP) y protocolos HTTP.
+		 
 		SSDP sirve para la búsqueda de dispositivos UPnP. 
 		Utiliza UDP en unicast o multicast en el puerto 1900 para anunciar los servicios de un dispositivo.
 	\end{block}
 	
 	\begin{block}{ }
-		El protocolo DIAL tiene dos componentes, DIAL Service Discovery y DIAL REST Service.
+		El protocolo DIAL tiene dos componentes
+		\begin{itemize}
+			\item DIAL Service Discovery
+			\item DIAL REST Service
+		\end{itemize}
 	\end{block}
 \end{frame}
 
 
 
-\begin{frame}{Imagen}
+\begin{frame}{DIAL Service Discovery}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{./Imagenes/dial.png}
 		\label{fig:DIAL}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{DIAL REST Service}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{./Imagenes/dialrest.png}
 	\end{figure}
 \end{frame}
 
@@ -113,6 +125,22 @@
 		\item \textbf<3>{Bytes de dirección IPv4}
 		\item \textbf<4>{Bytes de dirección IPv6}
 	\end{itemize}
+\end{frame}
+
+
+\subsection{Modo invitado}
+\begin{frame}{Modo invitado}
+	\begin{block}{ }
+		Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red
+		Wi-Fi, hecho que evitaría el modo invitado. 
+		
+		En este modo, el receptor emite ultrasonidos por el altavoz reconocidos por el emisor. También puede usarse un PIN de cuatro dígitos para identificación.
+	\end{block}
+
+
+	\begin{block}{Video}
+	\href{https://www.youtube.com/watch?v=w6lRq5spQmc}{Ultrasonic Networking using the Web Audio API}
+	\end{block}
 \end{frame}
 
 
