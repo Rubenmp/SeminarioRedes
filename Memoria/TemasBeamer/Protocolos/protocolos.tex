@@ -7,9 +7,9 @@
 			\item Intercambio de mensajes (Software propietario)
 		\end{itemize}
 	\end{block}
-	
+
 	\begin{block}{ }
-		La primeras versiones del Chromecast usaban el protocolo DIAL que englobaba ambos pasos.		
+		La primeras versiones del Chromecast usaban el protocolo DIAL que englobaba ambos pasos.
 	\end{block}
 \end{frame}
 
@@ -17,13 +17,13 @@
 \subsection{DIAL}
 \begin{frame}{DIAL}
 	\begin{block}{ }
-		DIAL (DIscovery And Launch) es el antiguo protocolo de comunicación. 
+		DIAL (DIscovery And Launch) es el antiguo protocolo de comunicación.
 		Se basa en Universal Plug and Play (UPnP), Simple Service Discovery Protocol (SSDP) y protocolos HTTP.
-		 
-		SSDP sirve para la búsqueda de dispositivos UPnP. 
+
+		SSDP sirve para la búsqueda de dispositivos UPnP.
 		Utiliza UDP en unicast o multicast en el puerto 1900 para anunciar los servicios de un dispositivo.
 	\end{block}
-	
+
 	\begin{block}{ }
 		El protocolo DIAL tiene dos componentes
 		\begin{itemize}
@@ -54,9 +54,9 @@
 
 \begin{frame}{mDNS}
 	\begin{block}{mDNS}
-		Multicast Domain Name System es la implementación del protocolo de resolución de nombres (DNS) para redes de área local, donde no existe un servidor DNS real.		
+		Multicast Domain Name System es la implementación del protocolo de resolución de nombres (DNS) para redes de área local, donde no existe un servidor DNS real.
 	\end{block}
-	
+
 	\begin{block}{Ventajas}
 		\begin{itemize}
 			\item Poca configuracion para activarse
@@ -81,11 +81,11 @@
 	\begin{exampleblock}{Ejemplo}
 		\centering
 		00 00 \textbf<2>{00 00} 00 01 00 00 \hspace{0.1cm} 00 00 00 00  \textbf<3>{07 61 70 70}
-		
+
 		\textbf<3> {6c 65 74 76} \textbf<4>{05 6c 6f 63} \hspace{0.1cm} \textbf<4>{61 6c} 00 00 01 00 01
-		
+
 	\end{exampleblock}
-	
+
 	\begin{itemize}
 		\item<1-> Flag de \textbf<2->{petición}
 		\item<1-> Nombre de dominio del servidor (\textbf<3>{appletv}.\textbf<4>{local})
@@ -119,7 +119,7 @@
 
 		08 c0 0c 00 04 40 00 00 \hspace{0.1cm} 08
 	\end{exampleblock}
-	
+
 	\begin{itemize}
 		\item Flag de \textbf<2>{respuesta}
 		\item \textbf<3>{Bytes de dirección IPv4}
@@ -132,8 +132,8 @@
 \begin{frame}{Modo invitado}
 	\begin{block}{ }
 		Hasta diciembre de 2014, el dispositivo emisor y receptor debían estar conectados a la misma red
-		Wi-Fi, hecho que evitaría el modo invitado. 
-		
+		Wi-Fi. Ya no es necesario gracias al modo invitado.
+
 		En este modo, el receptor emite ultrasonidos por el altavoz reconocidos por el emisor. También puede usarse un PIN de cuatro dígitos para identificación.
 	\end{block}
 
